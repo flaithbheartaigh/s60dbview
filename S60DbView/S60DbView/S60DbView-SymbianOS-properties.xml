@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NDSProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0" supplier="Nokia">
+  <activeMmpFile>group\S60DbView.mmp</activeMmpFile>
+  <updateMmpFile>true</updateMmpFile>
+  <updateUidCppFile>true</updateUidCppFile>
+  <pkgFile>sis\S60DbView.pkg</pkgFile>
+  <pkgUpdate>true</pkgUpdate>
+  <pkgGeneration>true</pkgGeneration>
+  <projectProperty name="uid3" label="Application UID" value="0x0e5e58da" description="Application UID. Development time UIDs between 0x00000000 - 0x0fffffff. Release UIDs provided by Symbian." type="input" pattern="UID" role="UID" persistedAs="project.uid3" />
+  <projectProperty name="basename" label="Base Name" value="S60DbView" description="Base name for files and classes" type="input" pattern="VariableName" role="ProjectName" persistedAs="project.basename" />
+  <projectProperty name="uid3" label="Application UID" value="0x0e5e58da" description="Application UID. Development time UIDs between 0x00000000 - 0x0fffffff. Release UIDs provided by Symbian." type="input" pattern="UID" role="UID" persistedAs="project.uid3" />
+  <projectProperty name="basename" label="Base Name" value="S60DbView" description="Base name for files and classes" type="input" pattern="VariableName" role="ProjectName" persistedAs="project.basename" />
+  <projectProperty name="uid3" label="Application UID" value="0x0e5e58da" description="Application UID. Development time UIDs between 0x00000000 - 0x0fffffff. Release UIDs provided by Symbian." type="input" pattern="UID" role="UID" persistedAs="project.uid3" />
+  <projectProperty name="basename" label="Base Name" value="S60DbView" description="Base name for files and classes" type="input" pattern="VariableName" role="ProjectName" persistedAs="project.basename" />
+  <projectProperty name="testDir" label="Test" value="tsrc" description="Directory for unit tests / test application files" type="input" pattern="Filename" role="Directory" persistedAs="directory.test" />
+  <projectProperty name="sisDir" label="Install" value="sis" description="Directory for installation files" type="input" pattern="Filename" role="Directory" persistedAs="directory.sis" />
+  <projectProperty name="aifDir" label="AIF" value="aif" description="Directory for application information files" type="input" pattern="Filename" role="Directory" persistedAs="directory.aif" />
+  <projectProperty name="dataDir" label="Data" value="data" description="Directory for resource files" type="input" pattern="Filename" role="Directory" persistedAs="directory.data" />
+  <projectProperty name="groupDir" label="Group" value="group" description="Directory for Symbian project files" type="input" pattern="Filename" role="Directory" persistedAs="directory.group" />
+  <projectProperty name="sourceDir" label="Source" value="src" description="Directory for C++ source files" type="input" pattern="Filename" role="Directory" persistedAs="directory.src" />
+  <projectProperty name="incDir" label="Include" value="inc" description="Directory for C++ header files" type="input" pattern="Filename" role="Directory" persistedAs="directory.inc" />
+  <projectProperty name="copyright" label="Copyright notice" value="ioerntLoveQiQi" description="Your copyright notice" type="input" pattern="FreeText" role="None" persistedAs="file.copyright" />
+  <projectProperty name="author" label="Author" value="ioernt" description="Name of the author" type="input" pattern="FreeText" role="None" persistedAs="file.author" />
+  <projectProperty name="uid" label="Application UID" value="0x0e5e58da" description="Application UID. Development time UIDs between 0x00000000 - 0x0fffffff. Release UIDs provided by Symbian." type="input" pattern="UID" role="UID" persistedAs="project.uid3" />
+  <projectProperty name="basename" label="Base Name" value="S60DbView" description="Base name for files and classes" type="input" pattern="VariableName" role="ProjectName" persistedAs="project.basename" />
+  <lang>EN</lang>
+  <bldInfFile>E:\Work\Google\s60dbview\S60DbView\S60DbView\group\bld.inf</bldInfFile>
+  <copyExportsFlag>true</copyExportsFlag>
+</NDSProject>

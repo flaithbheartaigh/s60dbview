@@ -1,0 +1,39 @@
+/*
+============================================================================
+ Name        : S60DbView.mmp
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : This is the project specification file for S60DbView.
+============================================================================
+*/
+TARGET                                  S60DbView.app 
+TARGETTYPE                              app 
+UID                                     0x100039CE 0x0e5e58da 
+TARGETPATH                              \system\apps\S60DbView 
+SOURCEPATH                              ..\data 
+RESOURCE                                S60DbView.rss 
+RESOURCE                                S60DbView_caption.rss 
+
+SOURCEPATH                              ..\src 
+SOURCE                                  S60DbViewApp.cpp 
+SOURCE                                  S60DbViewAppui.cpp 
+SOURCE                                  S60DbViewDocument.cpp 
+SOURCE                                  S60DbViewContainer.cpp 
+SOURCE                                  S60DbViewView.cpp 
+SOURCE                                  S60DbViewView2.cpp 
+SOURCE                                  S60DbViewContainer2.cpp 
+
+LANG                                    SC 31 
+USERINCLUDE                             . 
+USERINCLUDE                             ..\inc 
+SYSTEMINCLUDE                           . 
+SYSTEMINCLUDE                           \epoc32\include 
+/* [+] */ LIBRARY                       //edll.lib 
+LIBRARY                                 euser.lib 
+LIBRARY                                 apparc.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 eikcoctl.lib 
+LIBRARY                                 avkon.lib 
+AIF                                     S60DbView.aif ..\aif S60DbViewaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp 

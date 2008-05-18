@@ -1,0 +1,24 @@
+/*
+============================================================================
+ Name        : S60DbView.loc
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : This is a localisation file for S60DbView
+               A .loc file is the one and only place where the logical
+			   strings to be localised are defined. 
+============================================================================
+*/
+
+// LOCALISATION STRINGS
+
+#ifdef LANGUAGE_31
+#include "..\data\31cn.rls"   // PRC Chinese
+#endif
+
+#ifdef LANGUAGE_SC
+#include "..\data\01uk.rls"   // default U.K. English
+#endif
+
+
+

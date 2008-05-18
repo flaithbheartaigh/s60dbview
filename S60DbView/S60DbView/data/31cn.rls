@@ -1,0 +1,37 @@
+/*============================================================================
+ Name        : S60DbView.rls
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : String localization file
+============================================================================
+*/
+
+CHARACTER_SET UTF8
+
+
+#define qtn_appl_test                       "测试"
+
+// menu exit
+#define qtn_appl_exit                       "退出"
+
+
+#define qtn_appl_option_item                "应用程序菜单"
+
+
+#define qtn_view1_option_item               "视图一菜单"
+
+
+#define qtn_view2_option_item               "视图二菜单"
+
+
+#define qtn_view1_tab                       "视图一"
+
+
+#define qtn_view2_tab                       "视图二"
+
+// example caption strings for app
+#define qtn_app_caption_string              "S60数据库查看工具"
+
+#define qtn_app_short_caption_string        "it 看表"
+

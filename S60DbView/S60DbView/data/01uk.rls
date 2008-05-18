@@ -1,0 +1,37 @@
+/*============================================================================
+ Name        : S60DbView.rls
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : String localization file
+============================================================================
+*/
+
+CHARACTER_SET UTF8
+
+
+#define qtn_appl_test                       "Test"
+
+// menu exit
+#define qtn_appl_exit                       "Exit"
+
+
+#define qtn_appl_option_item                "<Application menu item>"
+
+
+#define qtn_view1_option_item               "<View1 menu item>"
+
+
+#define qtn_view2_option_item               "<View2 menu item>"
+
+
+#define qtn_view1_tab                       "View1"
+
+
+#define qtn_view2_tab                       "View2"
+
+// example caption strings for app
+#define qtn_app_caption_string              "S60DbView"
+
+#define qtn_app_short_caption_string        "S60DbView"
+

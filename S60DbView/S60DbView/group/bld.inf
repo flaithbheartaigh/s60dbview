@@ -1,0 +1,15 @@
+/*
+============================================================================
+ Name        : bld.inf
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : This file provides the information required for building the
+               whole of a S60DbView.
+============================================================================
+*/
+
+PRJ_MMPFILES
+
+S60DbView.mmp
+
