@@ -1,0 +1,19 @@
+/*
+============================================================================
+ Name        : S60DbViewaif.rss
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : RSS for creating the aif file for S60DbView.
+============================================================================
+*/
+
+#include <aiftool.rh>
+
+RESOURCE AIF_DATA
+	{
+	app_uid=0x0e5e58da;
+	num_icons=2;
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}

@@ -1,0 +1,26 @@
+/*
+============================================================================
+ Name        : S60DbView resource header file S60DbView.hrh
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : This file contains declarations for constants of S60DbView.
+               The file can be included in C++ or resource file.
+============================================================================
+*/
+
+#ifndef S60DBVIEW_HRH
+#define S60DBVIEW_HRH
+
+enum TS60DbViewCommandIds
+	{
+	ES60DbViewCmdAppTest = 1
+	};
+
+enum TS60DbViewTabViewId
+	{
+	ES60DbViewView1Tab= 1,
+	ES60DbViewView2Tab
+	};
+
+#endif      // S60DBVIEW_HRH

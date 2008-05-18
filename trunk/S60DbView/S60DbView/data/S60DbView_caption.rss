@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name        : S60DbView_caption.rss
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : Caption file for S60DbView.
+============================================================================
+*/
+
+#include "S60DbView.loc"
+#include <apcaptionfile.rh>
+
+RESOURCE CAPTION_DATA
+{
+	caption = qtn_app_caption_string;
+	shortcaption = qtn_app_short_caption_string;
+}

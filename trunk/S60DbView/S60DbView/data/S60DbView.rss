@@ -1,0 +1,187 @@
+/*
+============================================================================
+ Name        : S60DbView.rss
+ Author      : ioernt
+ Version     :
+ Copyright   : ioerntLoveQiQi
+ Description : This file contains all the resources for the S60DbView.
+============================================================================
+*/
+
+//  RESOURCE IDENTIFIER
+NAME    AWIZ // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+#include "S60DbView.hrh"
+#include "S60DbView.loc"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "S60DbView"; }
+
+RESOURCE EIK_APP_INFO
+	{
+	status_pane = r_s60dbview_status_pane;
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_hotkeys
+//
+//----------------------------------------------------
+//
+RESOURCE HOTKEYS r_s60dbview_hotkeys
+	{
+	control =
+		{
+		HOTKEY { command = EAknCmdExit; key = 'e'; }
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_view1
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_s60dbview_view1
+	{
+	hotkeys = r_s60dbview_hotkeys;
+	menubar = r_s60dbview_menubar_view1;
+	cba     = R_AVKON_SOFTKEYS_SELECTION_LIST;
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_menubar_view1
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_s60dbview_menubar_view1
+	{
+	titles =
+		{
+		MENU_TITLE { menu_pane = r_s60dbview_app_menu; txt = "App"; },
+		MENU_TITLE { menu_pane = r_s60dbview_view1_menu; txt = "View"; }
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_view1_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_s60dbview_view1_menu
+	{
+	items =
+		{
+		MENU_ITEM { command = ES60DbViewCmdAppTest; txt = qtn_view1_option_item; }
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_view2
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_s60dbview_view2
+	{
+	hotkeys = r_s60dbview_hotkeys;
+	menubar = r_s60dbview_menubar_view2;  
+	cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_menubar_view2
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_s60dbview_menubar_view2
+	{
+	titles =
+		{
+		MENU_TITLE { menu_pane = r_s60dbview_app_menu; txt = "App"; },
+		MENU_TITLE { menu_pane = r_s60dbview_view2_menu; txt = "View"; }
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_view2_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_s60dbview_view2_menu
+	{
+	items =
+		{
+		MENU_ITEM { command = ES60DbViewCmdAppTest; txt = qtn_view2_option_item; }
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_app_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_s60dbview_app_menu
+	{
+	items =
+		{
+		MENU_ITEM { command = ES60DbViewCmdAppTest; txt = qtn_appl_option_item; },
+		MENU_ITEM { command = EAknCmdExit; txt = qtn_appl_exit; }
+		};
+	}
+
+RESOURCE STATUS_PANE_APP_MODEL r_s60dbview_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidNavi;
+			type = EAknCtNaviPane;
+			resource = r_s60dbview_navi_decorator;
+			}
+		};
+	}
+
+//----------------------------------------------------
+//   
+//    r_s60dbview_navi_decorator
+//
+//----------------------------------------------------
+//
+RESOURCE NAVI_DECORATOR r_s60dbview_navi_decorator
+	{
+	type = ENaviDecoratorControlTabGroup;
+	control = TAB_GROUP
+		{
+		tab_width = EAknTabWidthWithTwoTabs;  // two tabs
+		active = 0;
+		tabs = {
+			TAB
+				{
+				id = ES60DbViewView1Tab; // from application hrh
+				txt = qtn_view1_tab;
+				},
+			TAB
+				{
+				id = ES60DbViewView2Tab;
+				txt = qtn_view2_tab;
+				}
+			};
+		};
+	}
